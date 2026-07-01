@@ -178,6 +178,8 @@ app.delete('/api/usuarios/:id', async (req, res) => {
     }
 });
 
+buscarCEP()
+
 // ============================================
 // INICIAR O SERVIDOR
 // ============================================
@@ -193,3 +195,4 @@ app.listen(PORT, () => {
     console.log('  DELETE /api/usuarios/:id    → Deletar usuário');
     console.log('  GET  /                      → Página HTML principal');
 });
+
